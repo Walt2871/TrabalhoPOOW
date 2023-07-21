@@ -62,12 +62,16 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">${l.titulo}</h5>
                         <p class="card-text">Autor: ${l.autor}<br>Categoria: ${l.categoria}<br>Editora: ${l.editora}<br>Preço: ${l.valor}</p>
-                        <a class="btn btn-danger" href="/akasha/livro/excluir/${l.codlivro}">Excluir<i class="m-1 fas fa-trash-alt"></i></a>
                         <a class="btn btn-primary" href="/akasha/livro/editar/${l.codlivro}">Editar<i class="m-1 fas fa-edit"></i></a>
                     </div>
                 </div>
             </div>
         </c:forEach>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a class="btn btn-primary mt-4" href="/akasha/livro/cadastrar">Cadastrar<i class="m-1 fas fa-edit"></i></a>
+        </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
