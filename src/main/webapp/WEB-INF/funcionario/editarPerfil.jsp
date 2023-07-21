@@ -56,7 +56,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-4 text-center">
-      <form:form action="/akasha/cliente/confirmarEdicao" method="post" modelAttribute="usuario">
+      <form:form action="/akasha/funcionario/confirmarEdicao" method="post" modelAttribute="usuario">
         <div class="form-group">
           <form:label path="nome" for="nome">Nome: </form:label>
           <form:input class="form-control" path="nome" id="nome" name="nome" type="text" value="${usuario.nome}"/>
