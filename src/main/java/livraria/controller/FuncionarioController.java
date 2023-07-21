@@ -21,18 +21,4 @@ public class FuncionarioController {
         return "funcionario/principal";
     }
 
-    @GetMapping("/editarPerfil")
-    public String editarPerfil(HttpSession sessao, Model model){
-        Usuario usuario = (Usuario) sessao.getAttribute("usuario");
-        model.addAttribute("usuario", usuario);
-        return "funcionario/editarPerfil";
-    }
-
-    @PostMapping("/confirmarEdicao")
-    public String confirmarEdicao(@ModelAttribute("usuario")Usuario usuario, HttpSession sessao, Model model){
-        new UsuarioDAO().editarUsuario(usuario);
-        sessao.setAttribute("usuario", usuario);
-        return "funcionario/principal";
-    }
-
 }

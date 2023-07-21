@@ -44,8 +44,6 @@
           ${usuario.nome}
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/akasha/funcionario/editarPerfil">Editar Perfil</a>
-          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/akasha/login/sair">Sair</a>
         </div>
       </li>
